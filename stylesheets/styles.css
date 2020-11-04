@@ -14,7 +14,9 @@ body{
     overflow: hidden;
     background-color: rgb(71, 0, 62);
   }
-
+#darkmode{
+    float:right;
+}
 .navbar li {
     float: left;
   }
@@ -54,5 +56,9 @@ body{
     top:100%;
     width: 100%;
     background-color: rgb(71, 0, 62);
+    color: white;
+  }
+.dark-mode {
+    background-color: black;
     color: white;
   }
