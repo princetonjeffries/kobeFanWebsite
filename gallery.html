@@ -5,24 +5,77 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Kobe Bryant Fan Page</title>
     <link rel="stylesheet" href="stylesheets/styles.css">
+    
 </head>
 <body>
     <header>
         <nav>
             <ul class="navbar">
-                <img src="images/logowhite.png" height="32px" width="48px">
+                <a href="index.html"><img src="images/logowhite.png" height="32px" width="48px"></a>
                 <li id=#home><a href="index.html">Home</a></li>
                 <li><a href="accomplishments.html">Accomplishments</a></li>
                 <li><a href="gallery.html"><strong>Gallery</strong></a></li>
+                <li><a href="highlights.html">Highlights</a></li>
                 <button id ="darkmode" onclick="darkMode()">Toggle dark mode</button>
             </ul>
         </nav>
     </header>
     <h1>Gallery</h1>
-    <div class="gallery">
+    <div class="slideshow-container">
+        <div class="mySlides fade">
+            <div class="numbertext">1 / 6</div>
+            <img src="images/kobe2001.png" style="width:100%">
+            <div class="text">Kobe had won the 2001 NBA championship, yet he was still solemn. The emotional backstory to this photo is because he and his parents had a falling out before the finals. His father hadn't attended a single game.</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">2 / 6</div>
+            <img src="images/kobeandmike2003.jpg" style="width:100%">
+            <div class="text" >People have for a long time compared Kobe Bryant and Michael Jordan. Their playstyles are very similar and the two greats next to eachother creates an iconic photo.</div>
+          </div>
+        
+          <div class="mySlides fade">
+            <div class="numbertext">3 / 6</div>
+            <img src="images/kobeandshaq.jpg" style="width:100%">
+            <div class="text">Shaquille O'Neal, Kobe's teammate consoles him after Kobe plays horribly and loses the game for the Lakers.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">4 / 6</div>
+            <img src="images/kobe2010finals.png" style="width:100%">
+            <div class="text">Kobe celebrates with the crowd as he wins his 4th finals for the Lakers.</div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">5 / 6</div>
+            <img src="images/kobefarewell.jpg" style="width:100%">
+            <div class="text">Kobe scores 61 points on his final game and gives a speech afterwards, thanking the fans. </div>
+          </div>
+
+          <div class="mySlides fade">
+            <div class="numbertext">6 / 6</div>
+            <img src="images/kobeandoscar.jpg" style="width:100%">
+            <div class="text">Kobe wins Best Animated Short at the 2018 Oscars for his short film, "Dear Basketball." Only ever retired professional athlete to do it.</div>
+          </div>
+        
+          <!-- Next and previous buttons -->
+          <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+          <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+        <br>
+        
+        <!-- The dots/circles -->
+        <div style="text-align:center">
+          <span class="dot" onclick="currentSlide(1)"></span>
+          <span class="dot" onclick="currentSlide(2)"></span>
+          <span class="dot" onclick="currentSlide(3)"></span>
+          <span class="dot" onclick="currentSlide(4)"></span>
+          <span class="dot" onclick="currentSlide(5)"></span>
+          <span class="dot" onclick="currentSlide(6)"></span>
+        </div>
     </div>
     <div class="footer">
-        <p>All Rights to Princeton Jeffries</p>
+        <p>© 2020 Princeton Jeffries - all rights reserved.</p>
     </div>
     <script src="js/script.js"></script>
 </body>
